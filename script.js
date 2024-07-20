@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Retrieve user inputs and trim them
       const username = document.getElementById('username').value.trim();
       const emailInput = document.getElementById('email').value.trim();
-      const passwordInput = document.getElementById('password').value.trim();
-      
+      const password = document.getElementById('password').value.trim();
       // Initialize validation variables
       let isValid = true;
       const messages = [];
@@ -27,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       
       // Password validation
-      if (passwordInput.length < 8) {
+      if (password.length < 8) {
         isValid = false;
         messages.push('Password must be at least 8 characters long.');
       }
